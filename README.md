@@ -86,7 +86,7 @@ The project is deployed on Laravel Cloud. The live API can be accessed at the fo
  - Run `php artisan db:seed --class=LandRecordSeeder` to populate the `land_records` table.
 
  ## Approach
- - **Framework**: Laravel 12 with MySQL as the database (substitute for Apache Doris due to its MySQL compatibility).
+ - **Framework**: Laravel 12 with MySQL as the database.
  - **Search Logic**: The API accepts a search input and queries the `land_records` table for matches in `parcel_id`, `plot_number`, or `owner_name`.
  - **PDF Generation**: Uses `barryvdh/laravel-dompdf` to generate a PDF from a Blade template, displaying results in a table.
  - **Response**: Returns the generated PDF as a downloadable file.

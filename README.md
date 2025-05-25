@@ -51,6 +51,36 @@ Land Record API
            -d '{"search":"PARCEL001"}'
       ```
 
+## Deployment
+The project is deployed on Laravel Cloud. The live API can be accessed at the following endpoint:
+- **Endpoint**: `POST https://land-record-api-master-1n4ov6.laravel.cloud/api/land-records/search`
+- **Description**: Search for land records by `parcel_id`, `plot_number`, or `owner_name` and download a PDF with the results.
+- **Example Request**:
+  ```bash
+  curl -X POST https://land-record-api-master-1n4ov6.laravel.cloud/api/land-records/search \
+       -H "Content-Type: application/json" \
+       -d '{"search":"PARCEL001"}'
+
+  Sample Records: The database contains the following dummy records for testing:
+    [
+    {
+        "parcel_id": "PARCEL001",
+        "plot_number": "PLOT123",
+        "owner_name": "John Doe",
+        "address": "123 Main St, Delhi",
+        "area": 500.50,
+        "status": "active"
+    },
+    {
+        "parcel_id": "PARCEL002",
+        "plot_number": "PLOT456",
+        "owner_name": "Jane Smith",
+        "address": "456 Park Ave, Delhi",
+        "area": 750.25,
+        "status": "active"
+    }
+  ]
+  
  ## Database Seeding
  - The project includes a `LandRecordFactory` that generates 100 fake land records with Indian names, addresses, and area details (100–2000 sqm).
  - Run `php artisan db:seed --class=LandRecordSeeder` to populate the `land_records` table.

@@ -92,6 +92,7 @@ The project is deployed on Laravel Cloud. The live API can be accessed at the fo
  - **Response**: Returns the generated PDF as a downloadable file.
  - **Database**: A simple `land_records` table with fields for parcel ID, plot number, owner name, address, area, and status.
  - **Error Handling**: Validates input and returns a 404 response if no records are found.
+ - **Deployment**: Deployed the project on Laravel Cloud (https://land-record-api-master-1n4ov6.laravel.cloud) for live testing.
 
  ## Sample PDF
  A sample PDF output is included in the repository as `sample_land_record_summary.pdf`.

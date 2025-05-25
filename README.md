@@ -95,7 +95,8 @@ The project is deployed on Laravel Cloud. The live API can be accessed at the fo
 
  ## Sample PDF
  A sample PDF output is included in the repository as `sample_land_record_summary.pdf`.
- [land_record_summary.pdf](https://github.com/user-attachments/files/20430683/land_record_summary.pdf)
+[land_record_summary.pdf](https://github.com/user-attachments/files/20430962/land_record_summary.pdf)
+
 
 
  ## Notes
